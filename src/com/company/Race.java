@@ -9,6 +9,13 @@ abstract public class Race {
     int min_dmg;
     int max_dmg;
 
+    public Race(int health, int armor, int min_dmg, int max_dmg) {
+        this.health = health;
+        this.armor = armor;
+        this.min_dmg = min_dmg;
+        this.max_dmg = max_dmg;
+    }
+
     public int getHealth() {
         return health;
     }

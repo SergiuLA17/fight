@@ -2,17 +2,9 @@ package com.company;
 
 public class Fight {
     public static void main(String[] args) {
-        Orc orc1 = new Orc();
-        orc1.setArmor(100);
-        orc1.setHealth(2000);
-        orc1.setMax_dmg(200);
-        orc1.setMin_dmg(100);
+        Orc orc1 = new Orc(2000, 100,100,200);
 
-        Elf elf1 = new Elf();
-        elf1.setArmor(50);
-        elf1.setHealth(1500);
-        elf1.setMax_dmg(300);
-        elf1.setMin_dmg(110);
+        Elf elf1 = new Elf(1500,50,110,300);
 
         System.out.println("The battle beggin!");
         System.out.println("Elf" + elf1);

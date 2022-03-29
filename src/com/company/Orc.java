@@ -7,6 +7,10 @@ import java.util.Random;
 public class Orc extends Race {
     ArrayList<Integer> randome = new ArrayList<>();
 
+    public Orc(int health, int armor, int min_dmg, int max_dmg) {
+        super(health, armor, min_dmg, max_dmg);
+    }
+
     @Override
     public boolean Ability(ArrayList<Integer> list) {
         generateAbility();
