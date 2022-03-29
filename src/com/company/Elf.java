@@ -17,16 +17,16 @@ public class Elf extends Race {
     }
 
     @Override
-    public void TakeDamage(int i) {
+    public void TakeDamage(int dmg) {
         if (health < 0) {
             health = 0;
             return;
         }
         if (Ability(randome)) {
             System.out.println("Elf is healing! ");
-            health = 210 + (health - (i - armor));
+            health = 210 + (health - (dmg - armor));
         } else {
-            health = health - (i - armor);
+            health = health - (dmg - armor);
         }
 
     }

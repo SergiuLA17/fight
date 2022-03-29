@@ -18,8 +18,8 @@ public class Orc extends Race {
     }
 
     @Override
-    public void TakeDamage(int i) {
-        health = health - (i - armor);
+    public void TakeDamage(int dmg) {
+        health = health - (dmg - armor);
         if (health < 0) {
             health = 0;
         }
